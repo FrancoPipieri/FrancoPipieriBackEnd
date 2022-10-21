@@ -34,11 +34,11 @@ class Usuario {
     };
 
     countMascotas(){
-        return console.log(`Tiene: ${this.mascotas.length} mascotas`)
+        console.log(`Tiene: ${this.mascotas.length} mascotas`)
     };
 
     getMascotas(){
-        return console.log(this.mascotas)
+        console.log(`Sus animales son: ${this.mascotas}`)
     }
     addBook(titulo, autor){
         this.libros.push({nombre: titulo, autor: autor})
