@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Escuadra",
+    "price": 123.45,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png",
+    "id": 1
+  },
+  {
+    "title": "Calculadora",
+    "price": 234.56,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-256.png",
+    "id": 2
+  },
+  {
+    "title": {
+      "title": "NoteBook Lenovo",
+      "price": "574000",
+      "thumbnail": "https://www.google.com/url?sa=i&url=https%3A%2F%2Farticulo.mercadolibre.com.ar%2FMLA-898073167-notebook-gamer-lenovo-legion-5-156-core-i5-8gb-128gb-ssd-1-_JM&psig=AOvVaw0qc3RZvD9aQrYAQ75HTVkJ&ust=1670366625828000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCODj3N3G4_sCFQAAAAAdAAAAABA5"
+    },
+    "price": null,
+    "id": 3
+  }
+]
