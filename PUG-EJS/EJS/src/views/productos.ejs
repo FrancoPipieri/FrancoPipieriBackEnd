@@ -16,12 +16,12 @@
             <div class="d-flex flex-column text-center justify-content-center border-top border-dark py-4">
                 <% if(items.length) { %>
                 <% items.forEach(product => {%>
-                <h4>Nombre: <%= product.title %></h4>
+                <h5>Nombre: <%= product.title %></h5>
                 <img src="<%= product.thumbnail %>" alt="" width="100" class="align-self-center">
                 <p>Precio: $<%= product.price %></p>
                 <% }) %>
                 <% } else { %>
-                <h1>No hay productos</h1>
+                <h1 class="alert alert-warning">No hay productos</h1>
             <% } %>
             </div>
         </div>
