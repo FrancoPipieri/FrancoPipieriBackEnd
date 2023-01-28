@@ -1,0 +1,11 @@
+[
+  {
+    "nombre": "franco",
+    "apellido": "Pipieri",
+    "usuario": "Franco-Adm",
+    "email": "asd@asd.com",
+    "contrasena": "1234",
+    "admin": "true",
+    "id": 1
+  }
+]
