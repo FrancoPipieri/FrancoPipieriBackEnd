@@ -128,9 +128,9 @@ object-fit:contain;
 .btn{
     border: none;
     border-radius: 5px;
-    background-color:cornflowerblue;
+    background-color:rgb(101, 51, 17);
     padding: 10px;
-    color: darkslateblue;
+    color: rgb(17, 12, 46);
     font-weight: bold;
     transition: .3s ease-in-out all;
     margin: 5px;

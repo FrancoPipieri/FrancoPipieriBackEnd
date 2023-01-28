@@ -36,7 +36,7 @@
     "thumbnail": "https://cdn3.iconfinder.com/data/icons/delta/256/Keyboard.png",
     "id": 4,
     "stock": 8,
-    "detalle": "Teclado Logitech.",
+    "detalle": "Teclado Logitech",
     "timestamp": 1674653344539
   },
   {
@@ -51,7 +51,7 @@
   },
   {
     "nombre": "Escritorio",
-    "precio": 2000,
+    "precio": 1300,
     "codigo": "Escritorio",
     "thumbnail": "https://cdn1.iconfinder.com/data/icons/prettycons-furniture-and-households-vol-1-flat/58/29-Working_Desk-furniture_room_appliance_household-256.png",
     "id": 6,
@@ -66,7 +66,7 @@
     "thumbnail": "https://cdn3.iconfinder.com/data/icons/flat-set-1/64/flat_set_1-21-256.png",
     "id": 7,
     "stock": 10,
-    "detalle": "Impresora LaserJet Samsung ML-2010.",
+    "detalle": "Impresora LaserJet",
     "timestamp": 1672089134451
   },
   {

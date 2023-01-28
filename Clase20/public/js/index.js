@@ -31,7 +31,7 @@ async function getUser(id) {
 //fetch de productos
 async function getProducts() {
     let productos = await fetch('/api/productos')
-    let data = await productos.json()
+    let data = await JSON.parse(productos)
     return data
 }
 
