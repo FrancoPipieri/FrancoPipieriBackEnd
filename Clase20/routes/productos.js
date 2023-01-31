@@ -1,41 +1,18 @@
-import { mongoProds, firebaseProds, filesystemProds} from "../daos/DaoGeneral.js"
+const express = require ('express')
+const router = express.Router()
 
-//productos
+//controllers requeridos
+const prod = require('../controllers/productos.js')
 
-async function listAll(req, res) {
-    const resultadoFs = await filesystemProds.listAll();
-    const resultadoFb = await firebaseProds.listAll();
-    const resultado = await mongoProds.listAll();
-    return res.send(resultadoFs);
-};
+//ruta de produtos 
+router.get("/", prod.listAll);
 
-async function listById(req, res) {
-    let { id } = req.params;
-    const resultadoFs = await filesystemProds.listById(id);
-    const resultadoFb = await firebaseProds.listById(id);
-    const resultado = await mongoProds.listById(id);
-    return res.send(resultadoFs);
-};
+router.get("/:id", prod.listById);
 
-async function createProduct(req, res) {
-    const resultadoFs = await filesystemProds.save(req.body);
-    const resultadoFb = await firebaseProds.save(req.body);
-    const resultado = await mongoProds.save(req.body);
-    return res.send(resultadoFs);
-};
+router.post("/", prod.createProduct);
 
-async function modifyProduct(req, res) {
-    const resultadoFs = await filesystemProds.update(req.body, req.params.id);
-    const resultadoFb = await firebaseProds.update(req.body, req.params.id);
-    const resultado = await mongoProds.update(req.body, req.params.id);
-    return res.send(resultadoFs);
-};
+router.put("/:id", prod.modifyProduct);
 
-async function deleteProduct(req, res) {
-    const resultadoFs = await filesystemProds.delete(req.params.id);
-    const resultadoFb = await firebaseProds.delete(req.params.id)
-    const resultado = await mongoProds.delete(req.params.id);
-    return res.send(resultadoFs);
-}
+router.delete("/:id", prod.deleteProduct);
 
-export default { listAll, listById, createProduct, modifyProduct, deleteProduct }
+module.exports = router;

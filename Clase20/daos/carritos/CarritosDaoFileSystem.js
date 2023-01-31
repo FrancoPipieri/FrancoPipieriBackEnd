@@ -1,6 +1,6 @@
-import contenedorCarritosFs from "../../classes/carrito.js"
+const contenedorCarritosFs = require ('../../classes/carrito.js')
 
-export default class CarritosDaoFileSystem extends contenedorCarritosFs {
+module.exports = class CarritosDaoFileSystem extends contenedorCarritosFs {
     constructor() {
         super("./db/carrito.txt")
     }
@@ -34,4 +34,5 @@ export default class CarritosDaoFileSystem extends contenedorCarritosFs {
         const data = await this.deleteProductById(idUser, idProd)
         return data
     }
+
 }

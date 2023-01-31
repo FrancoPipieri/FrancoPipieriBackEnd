@@ -1,6 +1,6 @@
-import contenedorProductosFs from "../../classes/productos.js"
+const contenedorProductosFs = require ('../../classes/productos.js')
 
-export default class ProductosDaoFileSystem extends contenedorProductosFs {
+module.exports = class ProductosDaoFileSystem extends contenedorProductosFs {
     constructor() {
         super("./db/productos.txt")
     }
@@ -29,3 +29,4 @@ export default class ProductosDaoFileSystem extends contenedorProductosFs {
         return data
     }
 }
+

@@ -1,9 +1,9 @@
-import { connectDB } from '../config.js';
-import main from "../main.js"
-import producto from "../models/producto.js"
 
+const {connectDB} = require('../config.js');
+const main = require("../main.js");
+const producto = require("../models/producto.js")
 
-export default class ContenedorMongoDb {
+module.exports = class Contenedor {
     constructor(model) {
         this.model = model
     }

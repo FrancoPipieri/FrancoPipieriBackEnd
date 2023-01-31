@@ -1,7 +1,7 @@
-import fs from "fs"
-import main from "../main.js"
+const fs = require("fs");
+const main = require("../main.js");
 
-export default class Contenedor {
+module.exports = class Contenedor {
   constructor(archivo) {
     this.archivo = archivo;
   }

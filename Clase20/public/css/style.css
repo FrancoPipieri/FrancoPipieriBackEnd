@@ -18,6 +18,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    background-color: aliceblue;
 }
 
 #header{
@@ -26,21 +27,23 @@
     justify-content: space-between;
     vertical-align: middle;
     align-items: center;
-    background-color: beige;
+    background-color: rgb(245, 232, 220);
     border-radius: 5px;
-    padding: 10px;
-    height: 100px;
+    padding: 15px;
+    height: 20vh;
 }
 
 #user-status{
-    margin: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5px 0;
     width: 100%;
     align-items: center;
 }
 
 #user-selector{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
     align-items: center;
 }
@@ -50,7 +53,8 @@
 }
 
 .h2, h3, h1{
-    color: darkslateblue
+    color: darkslateblue !important;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
 }
 
 .no-cart{
@@ -72,7 +76,8 @@ align-items: middle;
     flex-direction: column;
     align-items: center;
     padding: 5px;
-    width: 250px;
+    width: 25vw;
+    height: auto;
     margin: 10px 5px;
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -117,8 +122,10 @@ object-fit:contain;
 }
 
 .input-number{
-    width: 45px;
+    border-radius: 10px;
+    height: 30px;
     text-align: center;
+    align-self: center;
 }
 
 .input{
@@ -128,9 +135,9 @@ object-fit:contain;
 .btn{
     border: none;
     border-radius: 5px;
-    background-color:rgb(101, 51, 17);
+    background-color:cornflowerblue;
     padding: 10px;
-    color: rgb(17, 12, 46);
+    color: darkslateblue;
     font-weight: bold;
     transition: .3s ease-in-out all;
     margin: 5px;
@@ -153,10 +160,30 @@ object-fit:contain;
     font-weight: bold;
     transition: .3s ease-in-out all;
     margin: 5px;
+    box-sizing: initial !important;
 }
 
 .btn-small:hover{
     transition: .3s ease-in-out all;
     background-color:darkviolet;
     color: white;
+}
+
+.user-menu{
+    padding: 5px;
+    margin-top: 8px;
+}
+
+.btn-card{
+    border: 1px solid burlywood;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0 15px;
+    color: darkslategray;
+}
+.btn-card:hover{
+    background-color: darkcyan;
+    color: aquamarine;
+    font-style: italic;
+    transition: .4s;
 }

@@ -1,4 +1,4 @@
-import mongoose from "mongoose"
+const mongoose = require('mongoose') ;
 
 const carritoCollections = 'carrito'
 
@@ -8,4 +8,4 @@ const carritoSchema = new mongoose.Schema({
     productos: {type: Array, required: true},
 })
 
-export default mongoose.model(carritoCollections, carritoSchema)
+module.exports = mongoose.model(carritoCollections, carritoSchema)

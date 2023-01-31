@@ -1,30 +1,29 @@
-import admin from "firebase-admin"
-import mongoose from "mongoose";
-import fs from "fs"
-import { createRequire} from "module"
+const adminFirebase = require('firebase-admin');
+const mongoose = require ('mongoose')
+const persistenceType = "firebase"
+const FBServiceAccount = require ('./utils/mibase-f0167-firebase-adminsdk-yiwsv-7a68152e22.json');
+const API_PORT = 8080
+const MONGODB_PASSWORD = ""
+const MONGODB_USER = ""
+const FIREBASE_KEY = require ('./utils/mibase-f0167-firebase-adminsdk-yiwsv-7a68152e22.json');
 
 const iniciarServidorFirebase = async () => {
-    // const require = createRequire(import.meta.url)
-    // const FBServiceAccount = require('./no-va/mibase-f0167-firebase-adminsdk-i18iw-364608cba0.json');
-    const FBServiceAccount = JSON.parse(fs.readFileSync('./no-va/mibase-f0167-firebase-adminsdk-i18iw-364608cba0.json', 'utf-8'))
-    if(!admin.app.length){
-    // try {
-      admin.initializeApp({
-        credential: admin.credential.cert(FBServiceAccount),
-        databaseURL: "https://mibase-f0167.firebaseio.com"
+    try {
+      adminFirebase.initializeApp({
+        credential: adminFirebase.credential.cert(FBServiceAccount)
       })
-      console.log('Firebase se encuentra conectado')}
-  //   } catch(error) {
-  //     console.log(error)
-  //   }
+      console.log('Firebase se encuentra conectado')
+    } catch(error) {
+      console.log(error)
+    }
   }
   
   const connectDB = async () => {
-    const url = 'mongodb://127.0.0.1:27017/mibase'
+    const url = 'mongodb://127.0.0.1:27017/anabellaecommerce'
     return mongoose.connect(url, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
 }
 
-export {iniciarServidorFirebase, connectDB}
+module.exports = {iniciarServidorFirebase, connectDB, persistenceType, API_PORT, MONGODB_PASSWORD, MONGODB_USER, FIREBASE_KEY}

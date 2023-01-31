@@ -1,6 +1,6 @@
-import contenedorFirebase from "../../classes/contenedorFirebase.js"
+const contenedorFirebase = require ('../../classes/contenedorFirebaseDb.js')
 
-export default class ProductosDaoFirebase extends contenedorFirebase {
+module.exports = class ProductosDaoFirebase extends contenedorFirebase {
     constructor() {
         super("productos")
     }

@@ -31,7 +31,7 @@ async function getUser(id) {
 //fetch de productos
 async function getProducts() {
     let productos = await fetch('/api/productos')
-    let data = await JSON.parse(productos)
+    let data = await productos.json()
     return data
 }
 
@@ -87,7 +87,7 @@ async function mainBody() {
     </div>
     <div class="form">
         <input class="input-number" id="cant${producto.id}" onkeydown="return false" step="1" min="1" max="${producto.stock}" value="1" type="number" name="cantidad">
-        <input class="btn" type="submit" onclick="addToCart(${producto.id})" name="boton" value="agregar al carrito">
+        <input class="btn-card" type="submit" onclick="addToCart(${producto.id})" name="boton" value="agregar al carrito">
     </div>
     <input class="btn" type="button" onclick="detallarProducto(${producto.id})" name="boton" value="ver producto">
 </div>
@@ -553,10 +553,11 @@ async function seeCart() {
                         <p class="detalle-card"><strong>-tipo:</strong> ${producto.codigo}<br>
                         <strong>-descripcion:</strong><br>${producto.detalle}<br>
                         <strong>-precio:</strong> $:${producto.precio}-<br>
-                        <strong>-stock:</strong> ${producto.stock}
+                        <strong>-stock:</strong> ${producto.stock}<br>
+                        <strong> Id: </strong> ${producto.id}
                         </p>
                     </div>
-                    <input class="btn" type="button" onclick="quitarDelCarrito(${producto.id})" name="boton" value="quitar del carrito">
+                    <input class="btn-card" type="button" onclick="quitarDelCarrito(${producto.id})" name="boton" value="quitar del carrito">
                 </div>
                 `
                 main.innerHTML += contenido
@@ -594,5 +595,7 @@ async function deleteCart(id) {
 
 listarUsuarios()
 mainBody()
+
+
 
 

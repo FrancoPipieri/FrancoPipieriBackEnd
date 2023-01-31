@@ -1,8 +1,8 @@
-import time from "console"
-import fs from "fs"
-import main from "../main.js"
+const { time } = require("console");
+const fs = require("fs");
+const main = require("../main.js");
 
-export default class Carrito {
+module.exports = class Carrito {
   constructor(archivo) {
     this.archivo = archivo;
   }

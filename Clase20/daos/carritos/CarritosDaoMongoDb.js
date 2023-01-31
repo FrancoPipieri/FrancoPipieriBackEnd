@@ -1,7 +1,7 @@
-import contenedorMongoDb from "../../classes/contenedorMongoDb.js"
-import carrito from "../../models/carrito.js"
+const contenedorMongoDb = require ('../../classes/contenedorMongoDb.js')
+const carrito = require("../../models/carrito.js")
 
-export default class CarritosDaoMongoDb extends contenedorMongoDb {
+module.exports = class CarritosDaoMongoDb extends contenedorMongoDb {
     constructor() {
         super(carrito)
     }
@@ -36,3 +36,4 @@ export default class CarritosDaoMongoDb extends contenedorMongoDb {
     }
 }
 
+//const mongo = new CarritosDaoMongoDb()
