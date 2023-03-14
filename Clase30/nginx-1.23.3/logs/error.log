@@ -1,0 +1,29 @@
+2023/03/06 18:48:07 [alert] 8048#8064: worker process 14544 exited with code 1
+2023/03/06 18:48:07 [alert] 8048#8064: could not respawn worker
+2023/03/06 18:49:23 [emerg] 3944#12228: directive "root" is not terminated by ";" in C:\Users\Franco\Desktop\PROGRAMACION\BACKEND\FrancoPipieriBackEnd\Clase30\nginx-1.23.3/conf/nginx.conf:24
+2023/03/06 18:50:13 [emerg] 400#14396: directive "root" is not terminated by ";" in C:\Users\Franco\Desktop\PROGRAMACION\BACKEND\FrancoPipieriBackEnd\Clase30\nginx-1.23.3/conf/nginx.conf:24
+2023/03/06 18:51:03 [emerg] 12184#4944: directive "root" is not terminated by ";" in C:\Users\Franco\Desktop\PROGRAMACION\BACKEND\FrancoPipieriBackEnd\Clase30\nginx-1.23.3/conf/nginx.conf:24
+2023/03/06 18:52:01 [emerg] 14380#6092: directive "root" is not terminated by ";" in C:\Users\Franco\Desktop\PROGRAMACION\BACKEND\FrancoPipieriBackEnd\Clase30\nginx-1.23.3/conf/nginx.conf:24
+2023/03/06 18:52:01 [emerg] 3992#12820: directive "root" is not terminated by ";" in C:\Users\Franco\Desktop\PROGRAMACION\BACKEND\FrancoPipieriBackEnd\Clase30\nginx-1.23.3/conf/nginx.conf:24
+2023/03/06 18:52:02 [emerg] 12924#16072: directive "root" is not terminated by ";" in C:\Users\Franco\Desktop\PROGRAMACION\BACKEND\FrancoPipieriBackEnd\Clase30\nginx-1.23.3/conf/nginx.conf:24
+2023/03/06 18:52:53 [emerg] 5688#10348: directive "root" is not terminated by ";" in C:\Users\Franco\Desktop\PROGRAMACION\BACKEND\FrancoPipieriBackEnd\Clase30\nginx-1.23.3/conf/nginx.conf:24
+2023/03/06 18:54:35 [emerg] 9852#6376: directive "root" is not terminated by ";" in C:\Users\Franco\Desktop\PROGRAMACION\BACKEND\FrancoPipieriBackEnd\Clase30\nginx-1.23.3/conf/nginx.conf:24
+2023/03/06 19:05:08 [emerg] 16304#576: directive "root" is not terminated by ";" in C:\Users\Franco\Desktop\PROGRAMACION\BACKEND\FrancoPipieriBackEnd\Clase30\nginx-1.23.3/conf/nginx.conf:24
+2023/03/06 19:06:58 [emerg] 7376#13988: directive "root" is not terminated by ";" in C:\Users\Franco\Desktop\PROGRAMACION\BACKEND\FrancoPipieriBackEnd\Clase30\nginx-1.23.3/conf/nginx.conf:24
+2023/03/06 19:07:05 [emerg] 15856#15512: directive "root" is not terminated by ";" in C:\Users\Franco\Desktop\PROGRAMACION\BACKEND\FrancoPipieriBackEnd\Clase30\nginx-1.23.3/conf/nginx.conf:24
+2023/03/06 19:07:06 [emerg] 13912#5828: directive "root" is not terminated by ";" in C:\Users\Franco\Desktop\PROGRAMACION\BACKEND\FrancoPipieriBackEnd\Clase30\nginx-1.23.3/conf/nginx.conf:24
+2023/03/06 19:07:06 [emerg] 3888#1604: directive "root" is not terminated by ";" in C:\Users\Franco\Desktop\PROGRAMACION\BACKEND\FrancoPipieriBackEnd\Clase30\nginx-1.23.3/conf/nginx.conf:24
+2023/03/06 19:07:06 [emerg] 8332#8728: directive "root" is not terminated by ";" in C:\Users\Franco\Desktop\PROGRAMACION\BACKEND\FrancoPipieriBackEnd\Clase30\nginx-1.23.3/conf/nginx.conf:24
+2023/03/06 19:07:06 [emerg] 13908#2936: directive "root" is not terminated by ";" in C:\Users\Franco\Desktop\PROGRAMACION\BACKEND\FrancoPipieriBackEnd\Clase30\nginx-1.23.3/conf/nginx.conf:24
+2023/03/06 19:07:06 [emerg] 15724#15040: directive "root" is not terminated by ";" in C:\Users\Franco\Desktop\PROGRAMACION\BACKEND\FrancoPipieriBackEnd\Clase30\nginx-1.23.3/conf/nginx.conf:24
+2023/03/06 19:07:07 [emerg] 16080#8204: directive "root" is not terminated by ";" in C:\Users\Franco\Desktop\PROGRAMACION\BACKEND\FrancoPipieriBackEnd\Clase30\nginx-1.23.3/conf/nginx.conf:24
+2023/03/06 19:07:15 [emerg] 904#14780: directive "root" is not terminated by ";" in C:\Users\Franco\Desktop\PROGRAMACION\BACKEND\FrancoPipieriBackEnd\Clase30\nginx-1.23.3/conf/nginx.conf:24
+2023/03/06 19:50:48 [error] 3532#2280: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: nginx_server, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8080/", host: "localhost"
+2023/03/06 19:54:54 [notice] 8456#3944: signal process started
+2023/03/06 20:04:17 [emerg] 8112#7488: unexpected ";" in C:\Users\Franco\Desktop\PROGRAMACION\BACKEND\FrancoPipieriBackEnd\Clase30\nginx-1.23.3/conf/nginx.conf:26
+2023/03/06 20:04:49 [notice] 15800#12724: signal process started
+2023/03/06 20:09:48 [notice] 14552#9512: signal process started
+2023/03/07 18:23:02 [emerg] 2840#8320: unexpected "}" in C:\Users\Franco\Desktop\PROGRAMACION\BACKEND\FrancoPipieriBackEnd\Clase30\nginx-1.23.3/conf/nginx.conf:26
+2023/03/07 18:23:37 [notice] 4820#6824: signal process started
+2023/03/07 18:25:44 [notice] 3772#4268: signal process started
+2023/03/07 18:39:02 [notice] 4228#16024: signal process started
