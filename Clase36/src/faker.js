@@ -4,9 +4,9 @@ const generateFaker = () => {
     const array = [];
     for (let i = 0; i <= 4; i++) {
         const product = {
-            title: faker.vehicle.vehicle(),
+            nombre: faker.vehicle.vehicle(),
             thumbnail: faker.image.transport(),
-            price: faker.datatype.number()
+            precio: faker.datatype.number()
         }
         array.push(product)
     }

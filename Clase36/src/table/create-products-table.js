@@ -7,8 +7,8 @@ const createProductsTable = async () => {
     try {
         await database.schema.dropTableIfExists("products")
         await database.schema.createTable("products", (prodTable) => {
-            prodTable.string("title", 50).notNullable();
-            prodTable.float("price").notNullable();
+            prodTable.string("nombre", 50).notNullable();
+            prodTable.float("precio").notNullable();
             prodTable.string("thumbnail", 100).notNullable();
             prodTable.increments("id").primary();
         });
