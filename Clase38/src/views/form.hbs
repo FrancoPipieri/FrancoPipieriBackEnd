@@ -1,0 +1,35 @@
+<form action="/logout" method="get">
+<h1 style="display: inline-block;">Bienvenido {{user.username}}</h1> <button style="display: inline-block;" type="submit">Logout</button>
+<h3>Nombre: {{user.firstname}}</h3>
+<h3>Apellido: {{user.lastname}}</h3>
+<h3>Email: {{user.email}}</h3>
+<h3>Tel: {{user.phone}}</h3>
+<h3>Dirección: {{user.address}}</h3>
+<h3>Edad: {{user.age}}</h3>
+<img style="width: 100px" src="/{{user.photo}}" alt="Imagen subida">
+</form>
+
+<div class="container p-2 ">
+    <div class="jumbotron w-75 m-auto d-flex flex-column">
+        <h1 class="text-center">Carga tu producto</h1>
+
+        <form id="productForm" class="d-flex flex-column align-self-center justify-content-center w-75">
+            <label for="title">Nombre del Articulo:</label>
+            <input id="productInput" type="text" name="title" placeholder="Nombre de producto">
+            <label for="price">Precio:</label>
+            <input id="priceInput" type="number" id="price" name="price" placeholder="Precio">
+            <label for="thumbnail">URL:</label>
+            <input id="imgInput" type="text" name="thumbnail" placeholder="Url de la imagen">
+            
+            <input type="submit" class="btn btn-secondary mt-3">
+        </form>
+    </div>
+</div>
+<div  class="container d-flex p-2">
+    <div class="jumbotron w-75 m-auto d-flex flex-column">
+        <h1 class="text-center">Tienda de productos</h1>
+        <div id="productsContainer" class="d-flex flex-column text-center justify-content-center border-top border-dark py-4">
+        </div>
+    </div>
+</div>
+{{> chat}}
